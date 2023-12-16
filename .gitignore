@@ -35,3 +35,4 @@ yarn.lock
 
 # Build
 app
+storybook-static
