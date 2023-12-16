@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
+# Yarn
 yarn.lock
 .yarn/*
 !.yarn/cache
@@ -31,3 +32,6 @@ yarn.lock
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Build
+app

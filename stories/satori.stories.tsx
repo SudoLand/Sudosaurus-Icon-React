@@ -9,7 +9,7 @@ import * as React from "react";
 import { SudosaurusIconSatori } from "../src";
 
 export default {
-    title: "Action Bar",
+    title: "Satori",
 } as Meta<typeof SudosaurusIconSatori>;
 
 const Template: StoryFn<typeof SudosaurusIconSatori> = (args: any) => {
