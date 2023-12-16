@@ -6,13 +6,15 @@
 
 import { Meta, StoryFn } from "@storybook/react";
 import * as React from "react";
-import { SudosaurusIconSatori } from "../src";
+import { SudosaurusIconSatori, SudosaurusIconSatoriProps } from "../src";
 
 export default {
     title: "Satori",
 } as Meta<typeof SudosaurusIconSatori>;
 
-const Template: StoryFn<typeof SudosaurusIconSatori> = (args: any) => {
+const Template: StoryFn<typeof SudosaurusIconSatori> = (
+    args: SudosaurusIconSatoriProps,
+) => {
 
     return (<SudosaurusIconSatori
         {...args}
@@ -22,5 +24,7 @@ const Template: StoryFn<typeof SudosaurusIconSatori> = (args: any) => {
 export const Primary = Template.bind({});
 
 Primary.args = {
-    children: "Content",
+    size: 128,
+
+    fontFamily: "monospace",
 };

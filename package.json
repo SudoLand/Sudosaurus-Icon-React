@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "sudoo-build license && tsc",
-    "publish": "yarn build && cd app && npm publish --dry-run",
+    "publish": "yarn build && cd app && npm publish",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "build-storybook": "storybook build"
   },

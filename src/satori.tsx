@@ -6,6 +6,8 @@
 export type SudosaurusIconSatoriProps = {
 
     readonly size: number;
+
+    readonly fontFamily?: string;
 };
 
 export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
@@ -14,6 +16,7 @@ export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
 
     return (<div
         style={{
+            position: "relative",
             backgroundColor: "rgba(255, 255, 255, 0.6)",
             width: "100%",
             height: "100%",
@@ -22,7 +25,7 @@ export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
             justifyContent: "center",
             alignItems: "center",
             fontSize: props.size / 4,
-            fontFamily: "font",
+            fontFamily: props.fontFamily ?? "monospace",
         }}
     >
         <div
@@ -39,6 +42,7 @@ export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
         <div
             style={{
                 display: "flex",
+                position: "relative",
                 gap: props.size / 20,
             }}
         >
@@ -47,6 +51,7 @@ export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
             <div>U</div>
             <div
                 style={{
+                    position: "relative",
                     bottom: props.size / 32,
                 }}
             >_</div>
@@ -54,6 +59,7 @@ export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
         <div
             style={{
                 display: "flex",
+                position: "relative",
                 gap: props.size / 20,
             }}
         >
@@ -62,6 +68,7 @@ export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
             <div>S</div>
             <div
                 style={{
+                    position: "relative",
                     bottom: props.size / 32,
                 }}
             >_</div>
