@@ -1,11 +1,13 @@
 /**
  * @author WMXPY
- * @description Satori
+ * @description In Line
  */
 
-export type SudosaurusIconSatoriProps = {
+export type SudosaurusIconInLineProps = {
 
     readonly size: number;
+
+    readonly selectable?: boolean;
 
     readonly color?: string;
     readonly backgroundColor?: string;
@@ -18,13 +20,14 @@ export type SudosaurusIconSatoriProps = {
     readonly fontFamily?: string;
 };
 
-export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
-    props: SudosaurusIconSatoriProps,
+export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
+    props: SudosaurusIconInLineProps,
 ) => {
 
     return (<div
         style={{
             position: "relative",
+            userSelect: props.selectable ? "text" : "none",
             color: props.color,
             backgroundColor: props.backgroundColor,
             width: props.fullWidth ? "100%" : props.size,

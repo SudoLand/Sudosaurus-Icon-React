@@ -3,4 +3,4 @@
  * @description Index
  */
 
-export * from "./satori";
+export * from "./in-line";
