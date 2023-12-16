@@ -3,9 +3,13 @@
  * @description In Line
  */
 
+import { SudosaurusIconInLineDigestible } from "./in-line/digestible";
+
 export type SudosaurusIconInLineProps = {
 
     readonly size: number;
+
+    readonly digest?: boolean;
 
     readonly selectable?: boolean;
 
@@ -47,10 +51,34 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
                 gap: props.size / 20,
             }}
         >
-            <div>S</div>
-            <div>U</div>
-            <div>D</div>
-            <div>O</div>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                S
+            </SudosaurusIconInLineDigestible>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                U
+            </SudosaurusIconInLineDigestible>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                D
+            </SudosaurusIconInLineDigestible>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                O
+            </SudosaurusIconInLineDigestible>
         </div>
         <div
             style={{
@@ -59,9 +87,27 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
                 gap: props.size / 20,
             }}
         >
-            <div>S</div>
-            <div>A</div>
-            <div>U</div>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                S
+            </SudosaurusIconInLineDigestible>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                A
+            </SudosaurusIconInLineDigestible>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                U
+            </SudosaurusIconInLineDigestible>
             <div
                 style={{
                     position: "relative",
@@ -76,9 +122,27 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
                 gap: props.size / 20,
             }}
         >
-            <div>R</div>
-            <div>U</div>
-            <div>S</div>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                R
+            </SudosaurusIconInLineDigestible>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                U
+            </SudosaurusIconInLineDigestible>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+            >
+                S
+            </SudosaurusIconInLineDigestible>
             <div
                 style={{
                     position: "relative",

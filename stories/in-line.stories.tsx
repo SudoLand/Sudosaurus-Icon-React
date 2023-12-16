@@ -28,6 +28,8 @@ Primary.args = {
 
     size: 256,
 
+    digest: false,
+
     selectable: false,
 
     color: "black",
