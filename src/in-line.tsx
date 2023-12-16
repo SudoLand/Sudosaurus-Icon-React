@@ -40,20 +40,20 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
             height: props.fullHeight ? "100%" : props.size,
             fontFamily: props.fontFamily ?? "monospace",
             fontWeight: props.fontWeight ?? "bold",
-            fontSize: `${props.size / 4}px`,
+            fontSize: `${Math.floor(props.size / 4)}px`,
             fontStyle: props.fontStyle ?? "normal",
-            lineHeight: `${props.size / 4}px`,
+            lineHeight: `${Math.floor(props.size / 4)}px`,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            gap: props.size / 24,
+            gap: Math.floor(props.size / 24),
         }}
     >
         <div
             style={{
                 display: "flex",
-                gap: props.size / 24,
+                gap: Math.floor(props.size / 24),
             }}
         >
             <SudosaurusIconInLineDigestible
@@ -89,7 +89,7 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
             style={{
                 display: "flex",
                 position: "relative",
-                gap: props.size / 24,
+                gap: Math.floor(props.size / 24),
             }}
         >
             <SudosaurusIconInLineDigestible
@@ -122,7 +122,7 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
                 <div
                     style={{
                         position: "relative",
-                        bottom: props.size / 24,
+                        bottom: Math.floor(props.size / 24),
                     }}
                 >
                     _
@@ -133,7 +133,7 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
             style={{
                 display: "flex",
                 position: "relative",
-                gap: props.size / 24,
+                gap: Math.floor(props.size / 24),
             }}
         >
             <SudosaurusIconInLineDigestible
@@ -166,7 +166,7 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
                 <div
                     style={{
                         position: "relative",
-                        bottom: props.size / 24,
+                        bottom: Math.floor(props.size / 24),
                     }}
                 >
                     _

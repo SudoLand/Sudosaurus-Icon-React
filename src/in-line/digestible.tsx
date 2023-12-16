@@ -26,10 +26,10 @@ export const SudosaurusIconInLineDigestible: React.FC<SudosaurusIconInLineDigest
 
         return (<div
             style={{
-                width: props.size / 6,
+                width: Math.floor(props.size / 6),
                 height: props.dash ?
-                    props.size / 24 :
-                    props.size / 4,
+                    Math.floor(props.size / 24) :
+                    Math.floor(props.size / 4),
                 alignSelf: "flex-end",
                 backgroundColor: props.color,
                 printColorAdjust: "exact",
@@ -43,8 +43,8 @@ export const SudosaurusIconInLineDigestible: React.FC<SudosaurusIconInLineDigest
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: props.size / 6,
-            height: props.size / 4,
+            width: Math.floor(props.size / 6),
+            height: Math.floor(props.size / 4),
         }}
     >
         {props.children}
