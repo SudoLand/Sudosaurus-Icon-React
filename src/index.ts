@@ -4,3 +4,5 @@
  */
 
 export * from "./in-line";
+export * from "./tailwind";
+

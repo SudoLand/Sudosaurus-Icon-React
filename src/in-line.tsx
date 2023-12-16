@@ -28,11 +28,13 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
     props: SudosaurusIconInLineProps,
 ) => {
 
+    const color: string = props.color ?? "black";
+
     return (<div
         style={{
             position: "relative",
             userSelect: props.selectable ? "text" : "none",
-            color: props.color,
+            color,
             backgroundColor: props.backgroundColor,
             width: props.fullWidth ? "100%" : props.size,
             height: props.fullHeight ? "100%" : props.size,
@@ -56,28 +58,28 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
         >
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 S
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 U
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 D
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 O
@@ -92,28 +94,28 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
         >
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 S
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 A
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 U
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
                 dash
             >
@@ -136,28 +138,28 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
         >
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 R
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 U
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
             >
                 S
             </SudosaurusIconInLineDigestible>
             <SudosaurusIconInLineDigestible
                 size={props.size}
-                color={props.color ?? "black"}
+                color={color}
                 digest={props.digest}
                 dash
             >

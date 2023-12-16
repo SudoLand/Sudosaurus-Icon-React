@@ -37,6 +37,7 @@ Primary.args = {
 
     fontFamily: "monospace",
     fontWeight: 900,
+    fontStyle: "normal",
 
     fullWidth: false,
     fullHeight: false,

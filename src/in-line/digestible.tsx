@@ -35,7 +35,7 @@ export const SudosaurusIconInLineDigestible: React.FC<SudosaurusIconInLineDigest
                 printColorAdjust: "exact",
                 WebkitPrintColorAdjust: "exact",
             }}
-        />)
+        />);
     }
 
     return (<div
