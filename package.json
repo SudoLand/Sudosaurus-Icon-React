@@ -2,13 +2,13 @@
   "name": "@sudosaurus/icon-react",
   "packageManager": "yarn@4.0.2",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.1.0",
   "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "sudoo-build license && tsc",
-    "publish": "yarn build && cd app && npm publish",
+    "publish": "yarn build && cd app && npm publish --access public",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "build-storybook": "storybook build"
   },

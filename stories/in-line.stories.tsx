@@ -35,10 +35,9 @@ Primary.args = {
     color: "black",
     backgroundColor: "rgba(255, 255, 255, 0.6)",
 
-    fullWidth: false,
-    fullHeight: false,
-
+    fontFamily: "monospace",
     fontWeight: 900,
 
-    fontFamily: "monospace",
+    fullWidth: false,
+    fullHeight: false,
 };

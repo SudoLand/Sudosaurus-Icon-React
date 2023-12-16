@@ -11,6 +11,8 @@ export type SudosaurusIconInLineDigestibleProps = {
     readonly size: number;
     readonly color: string;
 
+    readonly dash?: boolean;
+
     readonly digest?: boolean;
 
     readonly children?: React.ReactNode;
@@ -24,8 +26,11 @@ export const SudosaurusIconInLineDigestible: React.FC<SudosaurusIconInLineDigest
 
         return (<div
             style={{
-                width: props.size / 4,
-                height: props.size / 4,
+                width: props.size / 6,
+                height: props.dash ?
+                    props.size / 24 :
+                    props.size / 4,
+                alignSelf: "flex-end",
                 backgroundColor: props.color,
                 printColorAdjust: "exact",
                 WebkitPrintColorAdjust: "exact",
@@ -33,7 +38,15 @@ export const SudosaurusIconInLineDigestible: React.FC<SudosaurusIconInLineDigest
         />)
     }
 
-    return (<div>
+    return (<div
+        style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: props.size / 6,
+            height: props.size / 4,
+        }}
+    >
         {props.children}
     </div>);
 };

@@ -16,12 +16,12 @@ export type SudosaurusIconInLineProps = {
     readonly color?: string;
     readonly backgroundColor?: string;
 
+    readonly fontFamily?: string;
     readonly fontWeight?: number;
+    readonly fontStyle?: "normal" | "italic" | "oblique" | "initial" | "inherit";
 
     readonly fullWidth?: boolean;
     readonly fullHeight?: boolean;
-
-    readonly fontFamily?: string;
 };
 
 export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
@@ -36,19 +36,22 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
             backgroundColor: props.backgroundColor,
             width: props.fullWidth ? "100%" : props.size,
             height: props.fullHeight ? "100%" : props.size,
-            fontWeight: props.fontWeight,
+            fontFamily: props.fontFamily ?? "monospace",
+            fontWeight: props.fontWeight ?? "bold",
+            fontSize: `${props.size / 4}px`,
+            fontStyle: props.fontStyle ?? "normal",
+            lineHeight: `${props.size / 4}px`,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            fontSize: props.size / 4,
-            fontFamily: props.fontFamily ?? "monospace",
+            gap: props.size / 24,
         }}
     >
         <div
             style={{
                 display: "flex",
-                gap: props.size / 20,
+                gap: props.size / 24,
             }}
         >
             <SudosaurusIconInLineDigestible
@@ -84,7 +87,7 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
             style={{
                 display: "flex",
                 position: "relative",
-                gap: props.size / 20,
+                gap: props.size / 24,
             }}
         >
             <SudosaurusIconInLineDigestible
@@ -108,18 +111,27 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
             >
                 U
             </SudosaurusIconInLineDigestible>
-            <div
-                style={{
-                    position: "relative",
-                    bottom: props.size / 32,
-                }}
-            >_</div>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+                dash
+            >
+                <div
+                    style={{
+                        position: "relative",
+                        bottom: props.size / 24,
+                    }}
+                >
+                    _
+                </div>
+            </SudosaurusIconInLineDigestible>
         </div>
         <div
             style={{
                 display: "flex",
                 position: "relative",
-                gap: props.size / 20,
+                gap: props.size / 24,
             }}
         >
             <SudosaurusIconInLineDigestible
@@ -143,12 +155,21 @@ export const SudosaurusIconInLine: React.FC<SudosaurusIconInLineProps> = (
             >
                 S
             </SudosaurusIconInLineDigestible>
-            <div
-                style={{
-                    position: "relative",
-                    bottom: props.size / 32,
-                }}
-            >_</div>
+            <SudosaurusIconInLineDigestible
+                size={props.size}
+                color={props.color ?? "black"}
+                digest={props.digest}
+                dash
+            >
+                <div
+                    style={{
+                        position: "relative",
+                        bottom: props.size / 24,
+                    }}
+                >
+                    _
+                </div>
+            </SudosaurusIconInLineDigestible>
         </div>
     </div>);
 };
