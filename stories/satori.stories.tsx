@@ -24,7 +24,16 @@ const Template: StoryFn<typeof SudosaurusIconSatori> = (
 export const Primary = Template.bind({});
 
 Primary.args = {
-    size: 128,
+
+    size: 256,
+
+    color: "black",
+    backgroundColor: "rgba(255, 255, 255, 0.6)",
+
+    fullWidth: false,
+    fullHeight: false,
+
+    fontWeight: 900,
 
     fontFamily: "monospace",
 };

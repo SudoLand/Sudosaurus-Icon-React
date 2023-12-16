@@ -7,6 +7,14 @@ export type SudosaurusIconSatoriProps = {
 
     readonly size: number;
 
+    readonly color?: string;
+    readonly backgroundColor?: string;
+
+    readonly fontWeight?: number;
+
+    readonly fullWidth?: boolean;
+    readonly fullHeight?: boolean;
+
     readonly fontFamily?: string;
 };
 
@@ -17,9 +25,11 @@ export const SudosaurusIconSatori: React.FC<SudosaurusIconSatoriProps> = (
     return (<div
         style={{
             position: "relative",
-            backgroundColor: "rgba(255, 255, 255, 0.6)",
-            width: "100%",
-            height: "100%",
+            color: props.color,
+            backgroundColor: props.backgroundColor,
+            width: props.fullWidth ? "100%" : props.size,
+            height: props.fullHeight ? "100%" : props.size,
+            fontWeight: props.fontWeight,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
