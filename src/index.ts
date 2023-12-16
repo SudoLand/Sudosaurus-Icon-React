@@ -1,5 +1,6 @@
 /**
  * @author WMXPY
- * @namespace Icon
  * @description Index
  */
+
+export * from "./satori";

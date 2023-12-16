@@ -6,16 +6,17 @@
 
 import { Meta, StoryFn } from "@storybook/react";
 import * as React from "react";
+import { SudosaurusIconSatori } from "../src";
 
 export default {
     title: "Action Bar",
-} as Meta<any>;
+} as Meta<typeof SudosaurusIconSatori>;
 
-const Template: StoryFn<any> = (args: any) => {
+const Template: StoryFn<typeof SudosaurusIconSatori> = (args: any) => {
 
-    return (<div
+    return (<SudosaurusIconSatori
         {...args}
-    ></div>);
+    />);
 };
 
 export const Primary = Template.bind({});
