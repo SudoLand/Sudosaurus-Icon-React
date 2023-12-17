@@ -58,16 +58,16 @@ export const SudosaurusIconTailwind: React.FC<SudosaurusIconTailwindProps> = (
             height: props.fullHeight ? "100%" : props.size,
             fontFamily: props.fontFamily ?? "monospace",
             fontWeight: props.fontWeight ?? "bold",
-            fontSize: `${Math.floor(props.size / 4)}px`,
+            fontSize: `${Math.ceil(props.size / 4)}px`,
             fontStyle: props.fontStyle ?? "normal",
-            lineHeight: `${Math.floor(props.size / 4)}px`,
-            gap: Math.floor(props.size / 24),
+            lineHeight: `${Math.ceil(props.size / 4)}px`,
+            gap: Math.ceil(props.size / 24),
         }}
     >
         <div
             className="flex"
             style={{
-                gap: Math.floor(props.size / 24),
+                gap: Math.ceil(props.size / 24),
             }}
         >
             <SudosaurusIconTailwindDigestible
@@ -106,7 +106,7 @@ export const SudosaurusIconTailwind: React.FC<SudosaurusIconTailwindProps> = (
         <div
             className="flex relative"
             style={{
-                gap: Math.floor(props.size / 24),
+                gap: Math.ceil(props.size / 24),
             }}
         >
             <SudosaurusIconTailwindDigestible
@@ -153,7 +153,7 @@ export const SudosaurusIconTailwind: React.FC<SudosaurusIconTailwindProps> = (
         <div
             className="flex relative"
             style={{
-                gap: Math.floor(props.size / 24),
+                gap: Math.ceil(props.size / 24),
             }}
         >
             <SudosaurusIconTailwindDigestible
@@ -190,7 +190,7 @@ export const SudosaurusIconTailwind: React.FC<SudosaurusIconTailwindProps> = (
                 <div
                     className="relative"
                     style={{
-                        bottom: Math.floor(props.size / 24),
+                        bottom: Math.ceil(props.size / 24),
                     }}
                 >
                     _

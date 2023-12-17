@@ -39,10 +39,10 @@ export const SudosaurusIconTailwindDigestible: React.FC<SudosaurusIconTailwindDi
         return (<div
             className={classes.join(" ")}
             style={{
-                width: Math.floor(props.size / 6),
+                width: Math.ceil(props.size / 6),
                 height: props.dash ?
-                    Math.floor(props.size / 24) :
-                    Math.floor(props.size / 4),
+                    Math.ceil(props.size / 24) :
+                    Math.ceil(props.size / 4),
                 printColorAdjust: "exact",
                 WebkitPrintColorAdjust: "exact",
             }}
@@ -62,8 +62,8 @@ export const SudosaurusIconTailwindDigestible: React.FC<SudosaurusIconTailwindDi
     return (<div
         className={classes.join(" ")}
         style={{
-            width: Math.floor(props.size / 6),
-            height: Math.floor(props.size / 4),
+            width: Math.ceil(props.size / 6),
+            height: Math.ceil(props.size / 4),
         }}
     >
         {props.children}
