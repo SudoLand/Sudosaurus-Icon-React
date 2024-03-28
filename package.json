@@ -16,7 +16,7 @@
     "@storybook/addon-actions": "^7",
     "@storybook/addon-essentials": "^7",
     "@storybook/addon-interactions": "^7",
-    "@storybook/addon-links": "^7",
+    "@storybook/addon-links": "^8",
     "@storybook/blocks": "^7",
     "@storybook/react": "^7",
     "@storybook/react-vite": "^7",
